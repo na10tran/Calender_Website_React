@@ -1,0 +1,24 @@
+{
+  
+  "scripts": {},
+  
+  "dependencies": {
+  
+    
+  "autoprefixer": "10.4.5",
+  
+    
+  "react": "^18.1.0",
+  
+    
+  "react-calendar": "^3.7.0"
+  
+  },
+  
+  "overrides": {
+  
+    
+  "autoprefixer": "10.4.5"
+  
+  }
+}

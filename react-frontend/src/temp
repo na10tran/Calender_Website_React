@@ -1,0 +1,72 @@
+<div id= "dates">
+					<DatePicker 
+						className ="datePicker" 
+						name="startDate" 
+						placeholderText="Start Date"
+						dateFormat ="MM/dd/yyyy" />
+					<DatePicker 
+						className ="datePicker" 
+						name="endDate" 
+						placeholderText="End Date"
+						dateFormat ="MM/dd/yyyy"/>
+				</div> 
+				<label className = "labels" id = "dayLabel "
+					htmlFor="date">Days</label>
+				<label className="letterLabel"> M  </label>
+				<label className="letterLabel"> T  </label>
+				<label className="letterLabel"> W  </label>
+				<label className="letterLabel"> T  </label>
+				<label className="letterLabel"> F  </label>
+				<label className="letterLabel"> S  </label>
+				<label className="letterLabel"> S  </label>
+				<div id="allLabels">
+					<input 
+						type = "checkbox"
+						name="days"
+						id="monday"
+						className="dayCheck" />
+					<input 
+						type = "checkbox"
+						name="days"
+						id="tuesday"
+						className="dayCheck" />
+					<input 
+						type = "checkbox"
+						name="days"
+						id="wednesday"
+						className="dayCheck" />
+					<input 
+						type = "checkbox"
+						name="days"
+						id="thursday" 
+						className="dayCheck"/>
+					<input 
+						type = "checkbox"
+						name="days"
+						id="friday"
+						className="dayCheck" />
+					<input 
+						type = "checkbox"
+						name="days"
+						id="saturday"
+						className="dayCheck" />
+					<input 
+						type = "checkbox"
+						name="days"
+						id="sunday"
+						className="dayCheck" />
+				</div>
+                <label className = "labels" id = "dateLabel "
+                htmlFor="date">Start Time</label>
+            <input 
+                type="text"
+                name="startTime"
+                id="startTime"
+                /*value={task.location}
+                onChange={handleChange}*/ />
+            <input 
+                type="text"
+                name="endTime"
+                id="endTime"
+                /*value={task.location}
+                onChange={handleChange}*/ />

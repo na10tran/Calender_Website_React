@@ -1,0 +1,266 @@
+.row#editTaskPage {
+    display: flex;
+    height: 80vh;
+    overflow: auto;
+}
+
+
+.p-2#editTaskPage {
+    color:lavender;
+    font-size: 2rem;
+    filter: drop-shadow(3px 3px 3px #222222);
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  #editTaskPage_title{
+    color: #f0f4f8;
+    font-size: 4.5rem;
+    text-align: center;
+    justify-self: center;
+    filter: drop-shadow(2px 2px 2px #222222);
+  }
+
+  #taskEditInfo {
+    padding-right: 2rem;
+    min-width: 0;
+    width: 90%;
+    justify-content: center;
+  }
+
+  #editTaskDate{
+    padding-left: 1rem;
+  }
+
+  #editTask_col{
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    align-items: center;
+  }
+
+
+  #editSubmitRow {
+      margin-top: 40px;
+  }
+
+  .btn-secondary#editSubmitButton {
+    background-color: #323232;
+    color: #7fddcc;
+    -webkit-filter: drop-shadow(3px 3px 3px #222222);
+    filter: drop-shadow(3px 3px 3px #222222);
+    font-size: xx-large;
+    font-weight:lighter;
+    text-align: center;
+
+    height: auto;
+    width: fit-content;
+
+  }
+  
+  .btn-secondary#editSubmitButton:hover {
+    background-color: #7fddcc;
+    color: #000000;
+  }
+
+  #dueDateLabel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .form-select#hoursSelect {
+    width: fit-content;
+    font-size: 1.2rem;
+  }
+
+  .form-select#hoursSelect:hover {
+    box-shadow: 0 0 10px #a1a6ec;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  .form-select#minsSelect {
+    width: fit-content;
+    font-size: 1.2rem;
+  }
+
+  .form-select#minsSelect:hover {
+    box-shadow: 0 0 10px #a1a6ec;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  #taskNameValidation {
+    font-size: 1.5rem;
+  }
+
+  #inputTaskName {
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+
+  #inputTaskName:hover {
+    box-shadow: 0 0 12px #c9b6ff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  #editTaskForm {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #priorityEdit {
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+
+  #priorityEdit:hover {
+    box-shadow: 0 0 12px #c9b6ff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+#editDueDate{
+  width: fit-content;
+}
+
+
+.react-calendar {
+  width: 480px;
+  max-width: 100%;
+  background:azure;
+  border: 2px solid #7fddcc;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  max-height: 500px;
+  min-height: fit-content;
+  padding-bottom: 2%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.react-calendar--doubleView {
+  width: 700px;
+}
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+.react-calendar__navigation {
+  display: flex;
+  height: 70px;
+  margin-bottom: 1rem;
+  background-color: #7fddcc;
+}
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #c4fdee;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #003464;
+}
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 1em 0.5em;
+  font-size: 1.4rem;
+}
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+}
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #7fddcc;
+}
+.react-calendar__tile--now {
+  background: #eaea50;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+}
+.react-calendar__tile--hasActive {
+  background: #76baff;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+.react-calendar__tile--active {
+  background: #7fddcc;
+  color: white;
+  border-radius: 50%;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #8de4d5;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
